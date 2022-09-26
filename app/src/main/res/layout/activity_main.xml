@@ -7,12 +7,174 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/dr_oleg_may"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/dr_oleg_mayami"
+        android:textColor=" #000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/page_1_oleg_photo"
+        app:layout_constraintTop_toBottomOf="@+id/page_1_main_image" />
+
+    <ImageView
+        android:id="@+id/page_1_main_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_image" />
+
+    <ImageView
+        android:id="@+id/page_1_oleg_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page_1_main_image"
+        app:srcCompat="@drawable/oleg_photo" />
+
+    <TextView
+        android:id="@+id/dental_surg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/dental_surgeon"
+        android:textColor=" #000000"
+        app:layout_constraintBottom_toTopOf="@+id/your_friend"
+        app:layout_constraintEnd_toEndOf="@+id/dr_oleg_may"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dr_oleg_may"
+        app:layout_constraintTop_toBottomOf="@+id/dr_oleg_may" />
+
+    <TextView
+        android:id="@+id/your_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/your_friendly_dental_friend"
+        android:textColor=" #000000"
+        app:layout_constraintBottom_toBottomOf="@+id/page_1_oleg_photo"
+        app:layout_constraintEnd_toEndOf="@+id/dr_oleg_may"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dr_oleg_may" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/dental_surg"
+        app:layout_constraintEnd_toEndOf="@+id/dr_oleg_may"
+        app:layout_constraintStart_toStartOf="@+id/dr_oleg_may"
+        app:layout_constraintTop_toBottomOf="@+id/dr_oleg_may"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/make_an_app"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="27dp"
+        android:theme="@style/Button.White"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/make_an_appointment"
+        android:textAllCaps="false"
+        app:icon="@drawable/icon_color"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page_1_oleg_photo"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/oleg_mayami"
+        android:layout_width="199dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="50dp"
+        android:drawablePadding="11sp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/email"
+        app:drawableLeftCompat="@drawable/vector"
+        app:layout_constraintBottom_toTopOf="@+id/www_dental_"
+        app:layout_constraintEnd_toEndOf="@+id/make_an_app"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/make_an_app"
+        app:layout_constraintTop_toBottomOf="@+id/make_an_app" />
+
+    <TextView
+        android:id="@+id/www_dental_"
+        android:layout_width="199dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:drawableLeft="@drawable/site"
+        android:drawablePadding="11sp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/www_dental_com"
+        app:layout_constraintBottom_toTopOf="@+id/whatsapp_me"
+        app:layout_constraintEnd_toEndOf="@+id/make_an_app"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/make_an_app"
+        app:layout_constraintTop_toBottomOf="@+id/oleg_mayami" />
+
+    <TextView
+        android:id="@+id/whatsapp_me"
+        android:layout_width="199dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="11dp"
+        android:drawableLeft="@drawable/whatsapp"
+        android:drawablePadding="11sp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/whatsapp_me"
+        app:iconSize="2sp"
+        app:layout_constraintBottom_toTopOf="@+id/save_to_pho"
+        app:layout_constraintEnd_toEndOf="@+id/make_an_app"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="@+id/make_an_app"
+        app:layout_constraintTop_toBottomOf="@+id/www_dental_" />
+
+    <TextView
+        android:id="@+id/save_to_pho"
+        android:layout_width="199dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:drawableLeft="@drawable/phonebook"
+        android:drawablePadding="11sp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/save_to_phonebook"
+        app:layout_constraintBottom_toTopOf="@+id/abdumomunov"
+        app:layout_constraintEnd_toEndOf="@+id/make_an_app"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/make_an_app"
+        app:layout_constraintTop_toBottomOf="@+id/whatsapp_me" />
+
+
+    <TextView
+        android:id="@+id/abdumomunov"
+        android:layout_width="199dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="32dp"
+        android:drawableLeft="@drawable/address"
+        android:drawablePadding="11sp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/abdumomunova_146"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/make_an_app"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/make_an_app"
+        app:layout_constraintTop_toBottomOf="@+id/save_to_pho" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
