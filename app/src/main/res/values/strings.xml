@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">FigmaDoctor</string>
+    <string name="make_an_appointment">Make an appointment</string>
+    <string name="your_friendly_dental_friend">Your friendly Dental Friend</string>
+    <string name="dental_surgeon">Dental surgeon</string>
+    <string name="dr_oleg_mayami">Dr. Oleg Mayami</string>
+    <string name="whatsapp_me">WhatsApp Me</string>
+    <string name="www_dental_com">www.dental.com</string>
+    <string name="save_to_phonebook">Save to phonebook</string>
+    <string name="abdumomunova_146">Abdumomunova 146</string>
+    <string name="email">oleg.mayami93@gmail.com</string>
 </resources>
