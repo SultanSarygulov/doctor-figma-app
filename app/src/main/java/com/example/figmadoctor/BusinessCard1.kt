@@ -12,7 +12,7 @@ class BusinessCard1 : AppCompatActivity() {
 
         val makeAppButton = findViewById<Button>(R.id.make_an_app)
         makeAppButton.setOnClickListener{
-            val intent = Intent(this, BusinessCard2::class.java)
+            val intent = Intent(this, BusinessCard3::class.java)
             startActivity(intent)
         }
     }

@@ -16,4 +16,12 @@
     <string name="scan_to_connect">Scan To Connect</string>
     <string name="email_page2">oleg.mayami93@gmail.com</string>
     <string name="phone_number_page2">+996 (774) 678 876</string>
+    <string name="instagram_button">Isntagram Button</string>
+    <string name="linkedin_button">LinkedIn Button</string>
+    <string name="facebook_button">FaceBook Button</string>
+    <string name="qr_code_to_connect">QR-Code to connect</string>
+    <string name="address">Abdumomunova 146</string>
+    <string name="site">www.dental.com</string>
+    <string name="background_image">Background Image</string>
+    <string name="profile_picture">Profile Picture</string>
 </resources>

@@ -17,6 +17,9 @@
             android:name=".BusinessCard2"
             android:exported="false" />
         <activity
+            android:name=".BusinessCard3"
+            android:exported="false" />
+        <activity
             android:name=".BusinessCard1"
             android:exported="true">
             <intent-filter>
