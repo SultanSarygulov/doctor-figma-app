@@ -9,4 +9,11 @@
     <string name="save_to_phonebook">Save to phonebook</string>
     <string name="abdumomunova_146">Abdumomunova 146</string>
     <string name="email">oleg.mayami93@gmail.com</string>
+    <string name="dr_oleg_mayami_page2">Dr. Oleg Mayami</string>
+    <string name="text_the_doctor">Text the doctor</string>
+    <string name="call_the_doctor">Call the doctor</string>
+    <string name="email_the_doctor">Email the doctor</string>
+    <string name="scan_to_connect">Scan To Connect</string>
+    <string name="email_page2">oleg.mayami93@gmail.com</string>
+    <string name="phone_number_page2">+996 (774) 678 876</string>
 </resources>

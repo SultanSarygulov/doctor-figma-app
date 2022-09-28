@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusinessCard2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+        android:layout_height="285dp"
+        android:background="@drawable/main_image"
+        android:cacheColorHint="#00000000"
+        android:drawSelectorOnTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/transparent_gradient" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/oleg_photo"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/dr_oleg_may_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="clip_horizontal|fill_vertical"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/dr_oleg_mayami_page2"
+        android:textColor="#1A82FC"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/text_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/text_the_doctor"
+        app:layout_constraintBottom_toBottomOf="@+id/text_floating_button"
+        app:layout_constraintEnd_toStartOf="@+id/email_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_floating_button"
+        app:layout_constraintTop_toTopOf="@+id/text_floating_button"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/icon_color"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/email_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/call_the_doctor"
+        app:layout_constraintBottom_toBottomOf="@+id/text_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_button"
+        app:layout_constraintTop_toTopOf="@+id/text_button"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/vector"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/text_floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/email_the_doctor"
+        app:layout_constraintEnd_toStartOf="@+id/text_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dr_oleg_may_2"
+        app:srcCompat="@drawable/text_icon" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/site_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="16dp"
+        app:contentPadding="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qr_code">
+
+        <TextView
+            android:id="@+id/site_card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_vertical|left"
+            android:drawableLeft="@drawable/site"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="www.dental.com" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/address_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="16dp"
+        app:contentPadding="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/site_card">
+
+        <TextView
+            android:id="@+id/address_card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_vertical|left"
+            android:drawableLeft="@drawable/address"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Abdumomunova 146" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/qr_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_floating_button"
+        app:srcCompat="@drawable/scan" />
+
+    <TextView
+        android:id="@+id/scan_to_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_to_connect"
+        android:textColor="#3E3D3D"
+        app:layout_constraintBottom_toTopOf="@+id/phone_number_page2"
+        app:layout_constraintStart_toEndOf="@+id/qr_code"
+        app:layout_constraintStart_toStartOf="@+id/phone_number_page2"
+        app:layout_constraintTop_toTopOf="@+id/qr_code" />
+
+    <TextView
+        android:id="@+id/email_page2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_page2"
+        android:textColor="#3E3D3D"
+        app:layout_constraintBottom_toBottomOf="@+id/qr_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/qr_code"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number_page2" />
+
+    <TextView
+        android:id="@+id/phone_number_page2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_number_page2"
+        android:textColor="#1A82FC"
+        app:layout_constraintBottom_toTopOf="@+id/email_page2"
+        app:layout_constraintStart_toEndOf="@+id/qr_code"
+        app:layout_constraintStart_toStartOf="@+id/email_page2"
+        app:layout_constraintTop_toBottomOf="@+id/scan_to_connect" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
