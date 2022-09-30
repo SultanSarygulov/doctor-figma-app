@@ -10,11 +10,5 @@ class BusinessCard3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_business_card3)
-
-        val makeAppButton = findViewById<FloatingActionButton>(R.id.facebook_button)
-        makeAppButton.setOnClickListener{
-            val intent = Intent(this, BusinessCard2::class.java)
-            startActivity(intent)
-        }
     }
 }
