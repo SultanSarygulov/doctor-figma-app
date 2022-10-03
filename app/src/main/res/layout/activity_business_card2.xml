@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:elevation="1dp"
     tools:context=".BusinessCard2">
 
     <View
@@ -23,9 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
+        android:src="@drawable/oleg_photo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/oleg_photo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/name_text"
@@ -68,15 +69,15 @@
         android:id="@+id/clinic_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/halaney"
         android:text="Dental Clinic"
         android:textColor=" #322E78"
         android:textSize="20sp"
-        android:fontFamily="@font/halaney"
         app:layout_constraintBottom_toBottomOf="@+id/clinic_logo"
         app:layout_constraintStart_toEndOf="@+id/clinic_logo" />
 
     <TextView
-        android:id="@+id/cliinc_slogan"
+        android:id="@+id/clinic_slogan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/open_sans"
@@ -90,20 +91,20 @@
         android:id="@+id/gridLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/cliinc_slogan"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
         android:columnCount="3"
         android:rowCount="2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cliinc_slogan">
+        app:layout_constraintTop_toBottomOf="@+id/clinic_slogan">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/call_card"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_row="0"
             android:layout_rowWeight="1"
             android:layout_column="0"
@@ -123,9 +124,10 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_phone_24" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_baseline_phone_24"
+                    app:tint="#003C68"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -139,8 +141,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/whatsapp_card"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_row="0"
             android:layout_rowWeight="1"
             android:layout_column="1"
@@ -160,9 +162,10 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/whatsapp_icon" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/whatsapp_icon"
+                    app:tint="#003C68"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -177,8 +180,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/email_card"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_row="0"
             android:layout_rowWeight="1"
             android:layout_column="2"
@@ -197,9 +200,10 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/vector" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/vector"
+                    app:tint="#003C68"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -214,8 +218,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/website_card"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_row="1"
             android:layout_rowWeight="1"
             android:layout_column="0"
@@ -233,9 +237,10 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/site" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/site"
+                    app:tint="#003C68"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -250,8 +255,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/telegram_card"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_row="1"
             android:layout_rowWeight="1"
             android:layout_column="1"
@@ -269,9 +274,10 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/icon_color" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/text_icon"
+                    app:tint="#003C68"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -285,8 +291,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/contact_card"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_row="1"
             android:layout_rowWeight="1"
             android:layout_column="2"
@@ -304,9 +310,10 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/phonebook" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/phonebook"
+                    app:tint="#003C68"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -329,6 +336,7 @@
         android:layout_marginTop="55dp"
         android:fontFamily="@font/open_sans_extrabold"
         android:text="Our Location"
+        android:textColor="#003C68"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
@@ -340,6 +348,7 @@
         android:layout_marginStart="16dp"
         android:fontFamily="@font/open_sans"
         android:text="Shopping center Asia Mal\n1st floor "
+        android:textColor="#003C68"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/our_location" />
@@ -358,8 +367,9 @@
     <View
         android:id="@+id/divider2"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="?android:attr/listDivider"
+        android:layout_height="1dp"
+        android:background="#003C68"
+        android:backgroundTint="#003C68"
         android:outlineAmbientShadowColor="@color/myTeal"
         app:layout_constraintEnd_toEndOf="@+id/map_text_link"
         app:layout_constraintStart_toStartOf="@+id/map_text_link"

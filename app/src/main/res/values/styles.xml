@@ -3,7 +3,7 @@
 <resources>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
 
-    <style name="Button.White" parent="ThemeOverlay.AppCompat">
+    <style name="Button.Teal" parent="ThemeOverlay.AppCompat">
         <item name="colorAccent">@color/myTeal</item>
     </style>
 </resources>

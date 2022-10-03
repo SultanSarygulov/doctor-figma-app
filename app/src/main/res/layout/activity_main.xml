@@ -7,23 +7,76 @@
     tools:context=".BusinessCard1">
 
     <TextView
+        android:id="@+id/address_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/abdumomunova_146"
+        android:textColor="#3E3D3D"
+        app:layout_constraintBottom_toBottomOf="@+id/address_img"
+        app:layout_constraintStart_toEndOf="@+id/address_img"
+        app:layout_constraintTop_toTopOf="@+id/address_img" />
+
+    <TextView
+        android:id="@+id/phonebook_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/save_to_phonebook"
+        android:textColor="#3E3D3D"
+        app:layout_constraintBottom_toBottomOf="@+id/phonebook_img"
+        app:layout_constraintStart_toEndOf="@+id/phonebook_img"
+        app:layout_constraintTop_toTopOf="@+id/phonebook_img" />
+
+    <TextView
+        android:id="@+id/whatsapp_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/whatsapp_me"
+        android:textColor="#3E3D3D"
+        app:layout_constraintBottom_toBottomOf="@+id/whatsapp_img"
+        app:layout_constraintStart_toEndOf="@+id/whatsapp_img"
+        app:layout_constraintTop_toTopOf="@+id/whatsapp_img" />
+
+    <TextView
+        android:id="@+id/website_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/www_dental_com"
+        android:textColor="#3E3D3D"
+        app:layout_constraintBottom_toBottomOf="@+id/website_img"
+        app:layout_constraintStart_toEndOf="@+id/website_img"
+        app:layout_constraintTop_toTopOf="@+id/website_img" />
+
+    <TextView
         android:id="@+id/dr_oleg_may"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:fontFamily="@font/open_sans_bold"
         android:text="@string/dr_oleg_mayami"
         android:textColor=" #000000"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/page_1_oleg_photo"
-        app:layout_constraintTop_toBottomOf="@+id/page_1_main_image" />
+        app:layout_constraintTop_toBottomOf="@+id/page_1_main_image"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/page_1_main_image"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:contentDescription="TODO"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -46,7 +99,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/open_sans_semibold"
         android:text="@string/dental_surgeon"
-        android:textColor=" #000000"
+        android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/your_friend"
         app:layout_constraintEnd_toEndOf="@+id/dr_oleg_may"
         app:layout_constraintHorizontal_bias="0.0"
@@ -68,8 +121,9 @@
     <View
         android:id="@+id/divider"
         android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:background="?android:attr/listDivider"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
         app:layout_constraintBottom_toTopOf="@+id/dental_surg"
         app:layout_constraintEnd_toEndOf="@+id/dr_oleg_may"
         app:layout_constraintStart_toStartOf="@+id/dr_oleg_may"
@@ -81,100 +135,83 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="27dp"
-        android:theme="@style/Button.White"
+        android:backgroundTint="#01B2AA"
         android:fontFamily="@font/open_sans_bold"
         android:text="@string/make_an_appointment"
         android:textAllCaps="false"
+        android:theme="@style/Button.Teal"
+        app:cornerRadius="4dp"
         app:icon="@drawable/icon_color"
         app:iconGravity="textStart"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/page_1_oleg_photo"
         tools:ignore="TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/oleg_mayami"
-        android:layout_width="199dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="11dp"
+    <ImageView
+        android:id="@+id/emile_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:drawablePadding="11sp"
+        app:layout_constraintStart_toStartOf="@+id/make_an_app"
+        app:layout_constraintTop_toBottomOf="@+id/make_an_app"
+        app:srcCompat="@drawable/vector"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/website_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/emile_img"
+        app:layout_constraintTop_toBottomOf="@+id/emile_img"
+        app:srcCompat="@drawable/site"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/whatsapp_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@+id/website_img"
+        app:layout_constraintTop_toBottomOf="@+id/website_img"
+        app:srcCompat="@drawable/whatsapp" />
+
+    <ImageView
+        android:id="@+id/phonebook_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@+id/whatsapp_img"
+        app:layout_constraintTop_toBottomOf="@+id/whatsapp_img"
+        app:srcCompat="@drawable/phonebook" />
+
+    <ImageView
+        android:id="@+id/address_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/phonebook_img"
+        app:layout_constraintTop_toBottomOf="@+id/phonebook_img"
+        app:srcCompat="@drawable/address" />
+
+    <TextView
+        android:id="@+id/email_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
         android:fontFamily="@font/open_sans_bold"
         android:text="@string/email"
-        app:drawableLeftCompat="@drawable/vector"
-        app:layout_constraintBottom_toTopOf="@+id/www_dental_"
-        app:layout_constraintEnd_toEndOf="@+id/make_an_app"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/make_an_app"
-        app:layout_constraintTop_toBottomOf="@+id/make_an_app" />
+        android:textColor="#3E3D3D"
+        app:layout_constraintBottom_toBottomOf="@+id/emile_img"
+        app:layout_constraintStart_toEndOf="@+id/emile_img"
+        app:layout_constraintTop_toTopOf="@+id/emile_img" />
 
-    <TextView
-        android:id="@+id/www_dental_"
-        android:layout_width="199dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
-        android:drawableLeft="@drawable/site"
-        android:drawablePadding="11sp"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="@string/www_dental_com"
-        app:layout_constraintBottom_toTopOf="@+id/whatsapp_me"
-        app:layout_constraintEnd_toEndOf="@+id/make_an_app"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/make_an_app"
-        app:layout_constraintTop_toBottomOf="@+id/oleg_mayami" />
-
-    <TextView
-        android:id="@+id/whatsapp_me"
-        android:layout_width="199dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="11dp"
-        android:drawableLeft="@drawable/whatsapp"
-        android:drawablePadding="11sp"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="@string/whatsapp_me"
-        app:iconSize="2sp"
-        app:layout_constraintBottom_toTopOf="@+id/save_to_pho"
-        app:layout_constraintEnd_toEndOf="@+id/make_an_app"
-        app:layout_constraintHorizontal_bias="0.01"
-        app:layout_constraintStart_toStartOf="@+id/make_an_app"
-        app:layout_constraintTop_toBottomOf="@+id/www_dental_" />
-
-    <TextView
-        android:id="@+id/save_to_pho"
-        android:layout_width="199dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
-        android:drawableLeft="@drawable/phonebook"
-        android:drawablePadding="11sp"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="@string/save_to_phonebook"
-        app:layout_constraintBottom_toTopOf="@+id/abdumomunov"
-        app:layout_constraintEnd_toEndOf="@+id/make_an_app"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/make_an_app"
-        app:layout_constraintTop_toBottomOf="@+id/whatsapp_me" />
-
-
-    <TextView
-        android:id="@+id/abdumomunov"
-        android:layout_width="199dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginBottom="32dp"
-        android:drawableLeft="@drawable/address"
-        android:drawablePadding="11sp"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="@string/abdumomunova_146"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/make_an_app"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/make_an_app"
-        app:layout_constraintTop_toBottomOf="@+id/save_to_pho" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
