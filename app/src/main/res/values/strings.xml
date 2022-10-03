@@ -25,4 +25,10 @@
     <string name="background_image">Background Image</string>
     <string name="profile_picture">Profile Picture</string>
     <string name="open_map">Open map</string>
+    <string name="save_contact">Save contact</string>
+    <string name="telegram">Telegram</string>
+    <string name="visit_website">Visit website</string>
+    <string name="email_us">Email us</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="to_call">To Call</string>
 </resources>
