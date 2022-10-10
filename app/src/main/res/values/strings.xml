@@ -31,4 +31,5 @@
     <string name="email_us">Email us</string>
     <string name="whatsapp">Whatsapp</string>
     <string name="to_call">To Call</string>
+    <string name="view_status">View status</string>
 </resources>
